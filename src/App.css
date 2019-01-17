@@ -1,6 +1,8 @@
 .App {
   max-width: 80%;
   margin: auto;
+  color: #32325d;
+  font-size: 1.3em;
 }
 
 .container {
@@ -23,7 +25,7 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  padding: 5% 0%;
+  padding-top: 2%;
 }
 
 .navLinks {
@@ -34,12 +36,12 @@
 
 .navLinks p {
   font-size: 1em;
-  color: #744FC6;
+  color: #32325d;
 }
 
 .signOutBtn:hover {
   cursor: pointer;
-  color: rgba(117, 79, 198, 0.815);
+  color: #32325dd8;
 } 
 
 .announcementCard {
@@ -47,4 +49,23 @@
   margin-bottom: 50px;
   color: '#444444';
 }
+
+
+.HomeLinksList {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.linkItem a {
+  color: #182433;
+  text-decoration: none;
+  padding: 5px;
+}
+
 

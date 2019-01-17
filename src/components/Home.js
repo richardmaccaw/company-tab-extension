@@ -1,5 +1,6 @@
 import React from 'react';
 import AnnouncementList from './AnnouncementList'
+import LinksList from './LinksList'
 
 import Grid from '@material-ui/core/Grid';
 import firebase from 'firebase'
@@ -8,7 +9,7 @@ import firebase from 'firebase'
 class Home extends React.Component {
 
     render () {
-        const { announcements } = this.props
+        const { announcements, links } = this.props
         return <>
             <Grid 
                 container
@@ -24,7 +25,7 @@ class Home extends React.Component {
                             {/* <TimezoneList></TimezoneList> */}
                         </Grid>
                         <Grid item>
-                            {/* <LinksList></LinksList> */}
+                            <LinksList links={links}></LinksList>
                         </Grid>
                     </Grid>
                 </Grid>

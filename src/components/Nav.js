@@ -34,7 +34,7 @@ class Nav extends React.Component {
                 <div className='nav'>
                     {user ? 
                         <div className='navLinks'>
-                            <Avatar src={user.photoURL} className={classes.avatar}/>
+                            <Avatar src={user.photoURL} className={classes.bigAvatar}/>
                             <p className='signOutBtn' onClick={signOut}>sign out</p> 
                         </div>
                     : 

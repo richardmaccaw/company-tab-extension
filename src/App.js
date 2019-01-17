@@ -21,9 +21,10 @@ firebase.initializeApp(config);
 class App extends Component {
 
   state = {
-    announcements: [],
     serverUser: [],
-    user: []
+    user: [],
+    links: [],
+    announcements: []
   }
 
   componentDidMount = () => {
@@ -55,7 +56,8 @@ class App extends Component {
         this.setState(
           {
             serverUser,
-            announcements: serverUser.announcements.sort((a,b) => b.id - a.id)
+            announcements: serverUser.announcements.sort((a,b) => b.id - a.id),
+            links: serverUser.links
           }
         )
       )
@@ -78,7 +80,11 @@ class App extends Component {
       <div className="App">
         <>
           <Nav user={this.state.user} signOut={this.signOut}></Nav>
-          <Home announcements={this.state.announcements}></Home>
+          <Home 
+            announcements={this.state.announcements}
+            links={this.state.links}
+
+            />
         </>
         
       </div>
