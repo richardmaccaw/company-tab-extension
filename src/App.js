@@ -7,7 +7,7 @@ import API from './API/API'
 import firebase from 'firebase'
 
 const config = {
-  apiKey: 'AIzaSyDUdPnFoUT6GtKE1ODcxUFewt90SGqZxi4',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "companytab-227916.firebaseapp.com",
   databaseURL: "https://companytab-227916.firebaseio.com",
   projectId: "companytab-227916",
