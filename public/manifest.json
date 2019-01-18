@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Company Tab Readonly",
   "description": "Spread information easily",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
     "default_popup": "index.html"

@@ -24,7 +24,8 @@ class App extends Component {
     serverUser: [],
     user: [],
     links: [],
-    announcements: []
+    announcements: [],
+    timezones: []
   }
 
   componentDidMount = () => {
@@ -57,7 +58,8 @@ class App extends Component {
           {
             serverUser,
             announcements: serverUser.announcements.sort((a,b) => b.id - a.id),
-            links: serverUser.links
+            links: serverUser.links,
+            timezones: serverUser.timezones
           }
         )
       )
@@ -67,7 +69,8 @@ class App extends Component {
     this.setState({
       announcements: [],
       serverUser: [],
-      user: []
+      user: [],
+      links: []
     })
     firebase.auth().signOut()
 
@@ -83,7 +86,7 @@ class App extends Component {
           <Home 
             announcements={this.state.announcements}
             links={this.state.links}
-
+            timezones={this.state.timezones}
             />
         </>
         
