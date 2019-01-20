@@ -16,7 +16,6 @@ const styles = {
     }
 };
 
-
 class Nav extends React.Component {
 
     uiConfig = {
@@ -39,7 +38,6 @@ class Nav extends React.Component {
                         </div>
                     : 
                         <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />}
-                    
                 </div>
             </div>
         ) 

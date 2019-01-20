@@ -7,7 +7,6 @@ const AnnouncementList = (props) => {
             {props.announcements
                 .map(announcement => <AnnouncementCard key={announcement.id} announcement={announcement}></AnnouncementCard>)}
         </div>
-   
     )
 }
 

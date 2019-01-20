@@ -24,7 +24,7 @@ class App extends Component {
     serverUser: [],
     user: [],
     links: [],
-    announcements: [],
+    announcements: [{title: 'Welcome to CompanyTab!', description: 'This is a sample announcement. Sign in to see your company announcements or head to companytab.com for more information.', published:true}],
     timezones: []
   }
 
@@ -70,16 +70,15 @@ class App extends Component {
       announcements: [],
       serverUser: [],
       user: [],
-      links: []
+      links: [],
+      timezones: []
     })
     firebase.auth().signOut()
-
   }
 
 
   render() {
     return (
-      
       <div className="App">
         <>
           <Nav user={this.state.user} signOut={this.signOut}></Nav>
@@ -89,7 +88,6 @@ class App extends Component {
             timezones={this.state.timezones}
             />
         </>
-        
       </div>
     );
   }

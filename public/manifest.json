@@ -1,12 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Company Tab Readonly",
+  "name": "CompanyTab",
   "description": "Spread information easily",
   "version": "1.2",
-
-  "browser_action": {
-    "default_popup": "index.html"
-  },
 
   "chrome_url_overrides": {
     "newtab": "index.html"

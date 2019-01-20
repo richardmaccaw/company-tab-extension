@@ -3,7 +3,6 @@ import React from 'react'
 const LinkCard = (props) => {
 
     return (
-
         <div >
             {props.link.url &&
                 <div className='linkItem'>
