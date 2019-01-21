@@ -5,8 +5,6 @@
   font-size: 1.3em;
 }
 
-
-
 .container {
   display: flex;
 }
@@ -34,18 +32,12 @@
 .navLinks {
   display: flex;
   align-items: center;
-  color: grey;
 }
 
 .navLinks p {
   font-size: 1em;
   color: #32325d;
 }
-
-.signOutBtn:hover {
-  cursor: pointer;
-  color: #32325dd8;
-} 
 
 .announcementCard {
   text-align: left;
