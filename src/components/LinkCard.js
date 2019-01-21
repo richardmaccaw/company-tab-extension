@@ -2,14 +2,16 @@ import React from 'react'
 
 const LinkCard = (props) => {
 
+    const clearbitBase = 'https://logo.clearbit.com/'
+    const clearbitOpt = '?size=30'
+
     return (
-        <div >
+        <div className='linkContainer'>
             {props.link.url &&
                 <div className='linkItem'>
-                    <img src={
-                        "https://logo.clearbit.com/" + 
-                        props.link.url.split('/')[0] + 
-                        "?size=40&greyscale=true"}/>
+                    <a href={`https://${props.link.url}`}>
+                        <img src={clearbitBase + props.link.url.split('/')[0] + clearbitOpt}/>
+                    </a>
                     <a href={`https://${props.link.url}`}>{props.link.name}</a>
                 </div>
             }

@@ -4,9 +4,9 @@ import moment from 'moment-timezone';
 
 const TimezoneCard = (props) => {
     return (
-        <div>
+        <div className="timezoneContainer">
             {props.timezone && 
-                <p> {props.timezone.name} {moment().tz(props.timezone.zone).format('h:mma')} </p>
+                <div className="timezoneItem"> {props.timezone.name + " - "} {moment().tz(props.timezone.zone).format('h:mma')} </div>
             }
         </div>
     )

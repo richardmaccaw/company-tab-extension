@@ -24,7 +24,7 @@ class App extends Component {
     serverUser: [],
     user: [],
     links: [],
-    announcements: [{title: 'Welcome to CompanyTab!', description: 'This is a sample announcement. Sign in to see your company announcements or head to companytab.com for more information.', published:true}],
+    announcements: [],
     timezones: []
   }
 
