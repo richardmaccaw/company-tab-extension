@@ -10,7 +10,7 @@ const LinkCard = (props) => {
             {props.link.url &&
                 <div className='linkItem'>
                     <a href={`https://${props.link.url}`}>
-                        <img src={clearbitBase + props.link.url.split('/')[0] + clearbitOpt}/>
+                        <img alt='logo' src={clearbitBase + props.link.url.split('/')[0] + clearbitOpt}/>
                     </a>
                     <a href={`https://${props.link.url}`}>{props.link.name}</a>
                 </div>

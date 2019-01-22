@@ -1,12 +1,10 @@
 class API {
     static init() {
-        this.baseURL = 'http://localhost:3002/api/v1'
-        this.usersURL = this.baseURL + '/users'
-        this.announcementsURL = 'http://localhost:3002/api/v1/announcements'
+        this.baseUrl = 'https://companytab-api.herokuapp.com/api/v1'
     }
 
-    static findOrCreateUser = (user) => {
-        return fetch('http://localhost:3002/api/v1/users', {
+    static findOrCreateUser (user) {
+        return fetch(this.baseUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
