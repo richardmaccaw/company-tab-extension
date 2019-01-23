@@ -51,6 +51,8 @@
 }
 
 .linkContainer {
+  min-width: 100px;
+  display: flex;
   background-color: #ffffff;
   margin-bottom: 0.5em;
   border: rgb(241, 241, 241) solid 1px;
@@ -58,19 +60,24 @@
 }
 
 .linkItem {
-  display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin: 0.3em 0em 0.3em 0.3em;
+}
+
+.linkItem img {
+  padding: 5px;
 }
 
 .linkItem a {
   color: #182433;
   text-decoration: none;
-  padding: 5px;
   font-size: 0.9em;
 }
 
 .timezoneContainer {
+  min-width: 100px;;
+  display: flex;
   background-color: #ffffff;
   margin-bottom: 0.5em;
   border: rgb(241, 241, 241) solid 1px;
@@ -78,6 +85,7 @@
 }
 
 .timezoneItem {
+  align-items: flex-start;
   color: #182433;
   text-decoration: none;
   padding: 0.5em;
