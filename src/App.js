@@ -52,6 +52,7 @@ class App extends Component {
       uid: uid,
       domain: email.replace(/.*@/, "")
     }
+    
     API.findOrCreateUser(user)
       .then(serverUser => serverUser && 
         this.setState(

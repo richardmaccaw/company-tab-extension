@@ -34,7 +34,8 @@ class Nav extends React.Component {
                     {user ? 
                         <div className='navLinks'>
                             <Avatar src={user.photoURL} className={classes.bigAvatar}/>
-                            <Button variant='contained' color='primary' className='signOutBtn' onClick={signOut}>sign out</Button> 
+                            <Button href='https://companytab.herokuapp.com'>admin</Button>
+                            <Button className='signOutBtn' onClick={signOut}>sign out</Button>
                         </div>
                     : 
                         <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />}
