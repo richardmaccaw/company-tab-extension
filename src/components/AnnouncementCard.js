@@ -20,7 +20,7 @@ const AnnouncementCard = (props) => {
                     </Grid>
                     <Grid item xs={10}>
                         <p>{props.announcement.description}</p>
-                        <p>{moment(props.announcement.date).fromNow()}</p>
+                        <p>{props.announcement.date && moment(props.announcement.date).fromNow()}</p>
                     </Grid>
                 </Grid>
             }
