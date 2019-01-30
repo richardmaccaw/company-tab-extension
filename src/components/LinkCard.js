@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 const LinkCard = (props) => {
 
     const clearbitBase = 'https://logo.clearbit.com/'
-    const clearbitOpt = '?size=30'
+    const clearbitOpt = '?size=35'
 
     return (
         <div className='linkContainer'>
