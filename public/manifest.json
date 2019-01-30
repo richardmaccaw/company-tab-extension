@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "CompanyTab",
   "description": "Spread information easily",
-  "version": "1.5",
+  "version": "1.60",
 
   "icons": {
     "16": "icon16.png",
